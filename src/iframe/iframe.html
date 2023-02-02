@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <div data-cy="title-iframe">And I am the iframe</div>
+    <a
+      href="#"
+      data-cy="change-window-location"
+      onclick="top.window.location.href='http://localhost:8081';"
+      >Click me to change parent (top.window.location.href)</a
+    >
+    <br />
+    <a
+      href="#"
+      data-cy="change-parent-location"
+      onclick="window.parent.location='http://localhost:8081'; return false;"
+      >Click me to change parent (window.parent.location)</a
+    >
+  </body>
+</html>
