@@ -28,6 +28,7 @@ describe('iframe', () => {
   });
 
   it('change-window-location', () => {
+    // this will crash Cypress
     getIframeBody().find('a[data-cy="change-window-location"]').click();
     cy.get('div[data-cy="title-redirect"]').should(
       'contain',
